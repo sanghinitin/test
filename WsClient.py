@@ -106,12 +106,9 @@ class TestWebSocketClient(WebSocketClient):
 def main():
     #create websocket connection
     client = TestWebSocketClient()
-    #wss://tqa.hallwaze.com/hallwaze/chat/ws/1:FE8F198532B758DA02CDFB6C7E78DE1E:79192/
-    #client.connect('wss://tqa.hallwaze.com/hallwaze/chat/ws/1:FE8F198532B758DA02CDFB6C7E78DE1E:79192/')
-    #5-5f9b4426-33d4-4496-aaa8-f1918a70de53
 
 
-    client.connect('ws://10.2.1.103:8888/rtm/1/5/5f9b4426-33d4-4496-aaa8-f1918a70de53')
+    client.connect('ws://localhost:8888/rtm/1/5/5f9b4426-33d4-4496-aaa8-f1918a70de53')
 
     try:
         ioloop.IOLoop.instance().start()
